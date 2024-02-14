@@ -11,6 +11,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install bottle
+            pip install pytest
       - run:
           name: Run Tests
           command: |
