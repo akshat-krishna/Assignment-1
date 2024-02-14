@@ -1,10 +1,6 @@
 import sqlite3
 from bottle import route, run, debug, template, request, static_file, error
 
-# only needed when you run Bottle on mod_wsgi
-# from bottle import default_app
-
-
 @route('/todo')
 def todo_list():
 
@@ -107,11 +103,6 @@ def mistake404(code):
     return 'Sorry, this page does not exist!'
 
 
-# debug(True)
-# run(reloader=True)
-
 if __name__ == '__main__':
 
     run(host='0.0.0.0', port='8080')
-# remember to remove reloader=True and debug(True) when you move your
-# application from development to a productive environment
