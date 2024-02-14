@@ -23,6 +23,8 @@ COPY new_task.tpl /home/app
 
 RUN pip3 install bottle
 
+RUN pip3 install pytest
+
 RUN python /home/app/createdb.py
 
 
